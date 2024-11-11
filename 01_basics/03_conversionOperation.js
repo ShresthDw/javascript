@@ -32,3 +32,10 @@ console.log(stringNumber);
 
 console.log(typeof stringNumber);
 
+
+let isLoggedIn = 1
+
+let booleanIsLoggedIn = Boolean (isLoggedIn)
+console.log(booleanIsLoggedIn);
+
+console.log(undefined == 0);
