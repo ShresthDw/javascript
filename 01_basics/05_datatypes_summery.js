@@ -27,6 +27,13 @@ const bigNumber = 58654854769876969n
 console.log(typeof bigNumber);  // datatype => bigint
 
 
+
+
+
+
+// refrencetype (non premitive)
+
+//araays, Objects, Functions
 const heros = [ "shaktiman", "naagraj", "dooga"]
 
 let myObj ={
@@ -46,8 +53,29 @@ console.log(typeof heros);     datatype=> functions
 
 
 
+// *******************************
+
+//Stack (primitive)memory copy ,Heap (non -primitive)reference ,, change in original value
+
+let myYouTubeName = "hitehschoudhary"
+let anothername = myYouTubeName
+anothername = "chaiaurcode"  // copy the value
 
 
-// refrencetype (non premitive)
 
-//araays, Objects, Functions
+console.log(myYouTubeName);
+console.log(anothername);
+
+
+let userOne = {
+    email : "user@google.com" ,
+    upi : "user@yapl",
+}
+
+let userTwo = userOne   // reference --> (same memory location)(all non primitive  datatypes)
+
+userTwo.email = "shresth@google.com"
+
+console.log(userTwo.email);
+console.log(userOne.email);
+
